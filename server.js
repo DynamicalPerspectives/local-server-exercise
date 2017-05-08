@@ -12,9 +12,9 @@ var PORT = 7000;
 **
 function handleRequest (request, response) {
 response.end(“It works!!” + request.url);
-
+}
 // create server
 var server = http.createServer(handleRequest);
 server.listener(PORT, function () {
-console.log(“Server is listening on http://localhost:%s”, PORT)
+console.log(“Server is listening on: http://localhost:%s", PORT")
 });
